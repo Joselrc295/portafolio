@@ -1,0 +1,65 @@
+/* Estilos generales */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+main {
+  padding: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #55535B;
+  color: white;
+}
+
+/* Modo claro */
+.light-theme {
+  background-color: #EFDEDE;
+  color: #3D3D60;
+}
+
+.light-theme header {
+  background-color: #FFFFFF;
+}
+
+.light-theme footer {
+  background-color: #55535B;
+}
+
+/* Modo oscuro */
+.dark-theme {
+  background-color: #3D3D60;
+  color: #EFDEDE;
+}
+
+.dark-theme header {
+  background-color: #55535B;
+}
+
+.dark-theme footer {
+  background-color: #3E5058;
+}
+
+button {
+  background-color: #3E5058;
+  color: #EFDEDE;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #55535B;
+}

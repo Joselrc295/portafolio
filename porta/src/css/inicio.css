@@ -1,0 +1,140 @@
+/* Asegúrate de que el contenedor ocupe toda la pantalla y que use flexbox */
+.centered-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ocupa toda la pantalla */
+    flex-direction: column; /* Para que los elementos estén uno debajo del otro */
+    text-align: center; /* Centra el texto */
+  }
+  
+  /* Opcional: Espaciado adicional entre los elementos */
+  .centered-container h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .centered-container p {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+  }
+  
+  .centered-container a {
+    margin-top: 2rem;
+    font-size: 1.25rem;
+    color: blue;
+    text-decoration: none;
+  }
+  /* CSS para el botón de WhatsApp */
+.Btn {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+    position: relative;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .svgContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    backdrop-filter: blur(0px);
+    letter-spacing: 0.8px;
+    border-radius: 10px;
+    transition: all 0.3s;
+    border: 1px solid rgba(156, 156, 156, 0.466);
+  }
+  
+  .BG {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #075e54;
+    z-index: -1;
+    border-radius: 10px;
+    pointer-events: none;
+    transition: all 0.3s;
+  }
+  
+  .Btn:hover .BG {
+    transform: rotate(35deg);
+    transform-origin: bottom;
+  }
+  
+  .Btn:hover .svgContainer {
+    background-color: rgba(156, 156, 156, 0.466);
+    backdrop-filter: blur(4px);
+  }
+  .skills-list {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #FFFFFF; /* Blanco para que el texto resalte */
+    letter-spacing: 1px; /* Espaciado entre letras */
+    background-color: #595d5f; /* Teal-Gray como fondo */
+    padding: 20px;
+    border-radius: 8px; /* Bordes redondeados */    
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+  }
+  
+  .skills-list span {
+    margin-right: 10px;
+    color: #EFDEDE; /* Gypsum para el texto de las habilidades */
+  }
+  
+  .skills-list span:hover {
+    color: #7575c6; /* Purple para el hover */
+    transition: color 0.3s ease; /* Transición suave en hover */
+  }
+  
+  .copy-email {
+    color: #595d5f; /* Purple como color base del texto */
+    text-decoration: none; /* Quitar subrayado */
+    font-weight: bold;
+    cursor: pointer; /* Cambia el cursor al pasar sobre el enlace */
+    position: relative; /* Para poder usar el pseudo-elemento ::after */
+    transition: color 0.3s ease; /* Transición suave del color */
+  }
+  
+  .copy-email::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #EFDEDE; /* Gypsum para el subrayado */
+    bottom: -2px;
+    left: 0;
+    transform: scaleX(0); /* Subrayado oculto inicialmente */
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+  }
+  
+  .copy-email:hover {
+    color: #3E5058; /* Cambia el color del texto a Teal-Gray en hover */
+  }
+  
+  .copy-email:hover::after {
+    transform: scaleX(1); /* Muestra el subrayado al hacer hover */
+    transform-origin: bottom left;
+  }
+  
+  .copy-email:active {
+    color: #EFDEDE; /* Gypsum como color del texto cuando se hace clic */
+  }
+  h1 {
+    margin: 0;
+  }
+  
+  h2 {
+   margin: 0;
+  }
+  
